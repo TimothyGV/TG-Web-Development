@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .adjacent + p {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Adjacent Sibling Selector</h2>
+    <p>
+      Adjacent betekent 'meteen daarna'. Met de + wordt dus een element
+      geselecteerd, met daarachter meteen de volgende met de tag.
+    </p>
+
+    <div class="adjacent">
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+    </div>
+
+    <p>Paragraph 3. After a div.</p>
+    <p>Paragraph 4. After a div.</p>
+  </body>
+</html>

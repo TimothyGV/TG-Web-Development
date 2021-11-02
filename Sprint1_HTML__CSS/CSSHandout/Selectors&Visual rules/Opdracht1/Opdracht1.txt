@@ -1,0 +1,45 @@
+Opdracht 1
+Je kunt op 3 verschillende manieren CSS in je HTML inladen. Op welke 3 manieren kun je dat doen? Leg ook voor elke wijze uit wat het precies inhoud.
+
+
+Antwoord
+Er zijn drie manier om dit te doen:
+1. External
+
+   <!DOCTYPE html>
+  <html>
+    <head>
+  <link rel="stylesheet" href="mystyle.css">
+  </head>
+  <body>
+</body>
+</html> 
+
+
+2. Internal
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+</style>
+</head>
+
+3. Inline CSS
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:blue;text-align:center;">Voorbeeld heading</h1>
+<p style="color:red;">Voorbeeld paragraaf</p>
+
+</body>
+</html> 

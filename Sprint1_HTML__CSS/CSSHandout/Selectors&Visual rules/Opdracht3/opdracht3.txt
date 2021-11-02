@@ -1,0 +1,24 @@
+De type selector matcht met all elementen met die naam. 
+Voorbeeld, waarbij alle 'a' tags worden opgeroepen:
+
+a{color: red;}
+
+
+De descendant selector target alle elementen van die klasse in een element. 
+Voorbeeld waarbij alle p tags worden opgeroepen in een div:
+
+div p{
+  color: red;
+}
+
+De class selector raakt alle elementen van die class. Voorbeeld: er wordt een div aangemaakt met de naam: voorbeeld. 
+
+<div class="Voorbeeld">
+  <p>Dit is een voorbeeld</p>
+  <p>En dit is een ondertitel</p>
+</div>
+
+De class selector ziet er zo uit en zorgt er voor dat alle tekst een specifieke kleur krijgt:
+.voorbeeld{
+  color: #000;
+}

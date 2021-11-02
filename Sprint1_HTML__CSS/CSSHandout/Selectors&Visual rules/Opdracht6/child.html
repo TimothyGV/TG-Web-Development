@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .child > p {
+        background-color: darkcyan;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Child selector</h2>
+    <p>
+      Met een child selector wordt elk kind in een bepaalde div geselecteerd.
+      Voordeel daarvan is dat je snel veel kunt aanpassen binnnen een sectie van
+      de webpagina.
+    </p>
+    <div class="child">
+      <p>Paragraph 1 in de div.</p>
+      <p>Paragraph 2 in de div.</p>
+      <section>
+        <p>Paragraph 3 is een descendent element.</p>
+      </section>
+      <p>Paragraph 4 in de div.</p>
+    </div>
+    <p>paragraph 5 buiten de div</p>
+  </body>
+</html>

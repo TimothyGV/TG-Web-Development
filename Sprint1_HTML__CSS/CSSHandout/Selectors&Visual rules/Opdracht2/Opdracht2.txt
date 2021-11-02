@@ -1,0 +1,7 @@
+In CSS wordt allereerst een selector geselecteerd. Dit zijn tags, zoals 'h1' 'p' 'a'. 
+Daarna volgt de declaration. In de declaration bevinden zich meer declarations, die elk een eigenschap van de selector aanroepen. Het bestaat dus altijd uit een 'property' en 'value'.
+
+Het ziet er dan als volgt uit:
+p {color: #fff; font-size: 12px;}
+
+(statement(selector){declaration(property:value;)declaration(property:value;) })
