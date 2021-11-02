@@ -1,0 +1,31 @@
+nav {
+  height: 100px;
+}
+
+.forms__container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px 0 0 0;
+}
+
+#form2 {
+  margin: 50px;
+  background: lightgray;
+}
+
+fieldset {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+fieldset label,
+fieldset input {
+  margin: 10px 0 0 10px;
+}
+
+.gender__container {
+  display: flex;
+}
