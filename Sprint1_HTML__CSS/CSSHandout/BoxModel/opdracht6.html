@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht6</title>
+    <style>
+      body {
+        background: greenyellow;
+      }
+      .content {
+        width: 300px;
+        background: darkgrey;
+      }
+
+      #padding {
+        padding: 30px;
+        border: 10px solid green;
+      }
+
+      #margin {
+        padding: 30px;
+        border: 10px solid green;
+        margin: 70px;
+      }
+
+      .margin__container {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Opdracht 5</h1>
+    <p>
+      Als je ruimte tussen de border en buiten de box wilt toepassen, gebruik je
+      de property margin.
+    </p>
+    <div class="content" id="padding">
+      Deze box heeft een padding en een border, maar geen margin.
+    </div>
+
+    <div class="margin__container">
+      <div class="content" id="margin">
+        Deze box heeft dezelfde padding en border als de vorige, maar nu ook een
+        margin van 70px (Boven, rechts, onder, links).
+      </div>
+      <div class="content" id="margin">
+        Door de padding van de vorige container, wordt deze dus op een afstand
+        van 70x naar rechts opgeschoven.
+      </div>
+    </div>
+  </body>
+</html>
