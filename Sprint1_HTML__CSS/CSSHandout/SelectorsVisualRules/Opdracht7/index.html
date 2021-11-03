@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht7</title>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Maak nu een html bestand aan met voorbeelden van alle soorten selectors
+      erin. Maak een link in je antwoord die naar dat html bestand verwijst.
+    </p>
+    <table>
+      <tr>
+        <th>selector</th>
+        <th>voorbeeld</th>
+        <th>beschrijving</th>
+      </tr>
+      <tr>
+        <th>.div</th>
+        <th>.voorbeeld</th>
+        <th>Alle elementen met de klasse naam class='intro'</th>
+      </tr>
+      <tr>
+        <th>#id</th>
+        <th>#first__section</th>
+        <th>Alle elementen met de id naam id='first__section'</th>
+      </tr>
+      <tr>
+        <th>*</th>
+        <th>selecteert alle elements</th>
+        <th>* aan het begin van het css bestand selecteert alles</th>
+      </tr>
+      <tr>
+        <th>:root</th>
+        <th>:root</th>
+        <th>selecteert het root element</th>
+      </tr>
+      <tr>
+        <th>element</th>
+        <th>p</th>
+        <th>Selecteert alle &lt;p&gt; elementen</th>
+      </tr>
+      <tr>
+        <th>.class1 .class2</th>
+        <th>.voorbeeld1 .voorbeeld2</th>
+        <th>
+          Selecteert alle elementen met voorbeeld2 die een kind zijn van een
+          element voorbeeld1
+        </th>
+      </tr>
+      <tr>
+        <th>element.class</th>
+        <th>p.voorbeeld</th>
+        <th>Selecteert alle &lt;p&gt; elementen in intro</th>
+      </tr>
+      <tr>
+        <th>element,element</th>
+        <th>p,.voorbeeld</th>
+        <th>Selecteert alle &lt;p&gt; en alle elementen in voorbeeld</th>
+      </tr>
+      <tr>
+        <th>element>element</th>
+        <th>.voorbeeld > p</th>
+        <th>Selecteert alle &lt;p&gt; waar voorbeeld een parent is</th>
+      </tr>
+      <tr>
+        <th>element+element</th>
+        <th>.voorbeeld + p</th>
+        <th>
+          Selecteert alle &lt;p&gt; die direct na .voorbeeld zijn geplaatst
+        </th>
+      </tr>
+      <tr>
+        <th>element~element</th>
+        <th>p~ul</th>
+        <th>
+          Selecteert alle &lt;ul&gt; die vooraf zijn gegeaan door een &lt;p&gt;
+        </th>
+      </tr>
+      <tr>
+        <th>:hover</th>
+        <th>a:hover</th>
+        <th>Selecteert en geeft effect op een link</th>
+      </tr>
+      <tr>
+        <th>:nth-child(n)</th>
+        <th>p:nth-child(2)</th>
+        <th>
+          Selecteert elk element &lt;p&gt; dat het tweede kind is van element
+        </th>
+      </tr>
+      <tr>
+        <th>:focus</th>
+        <th>input:focus</th>
+        <th>Selecteert elke input element dat de focus heeft</th>
+      </tr>
+    </table>
+  </body>
+</html>

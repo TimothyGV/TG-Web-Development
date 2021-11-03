@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 8</title>
+  </head>
+  <body>
+    <h2>Cascade</h2>
+    <p>
+      Cascading is een belangrijk principe binnen css. Het is zelfs in de naam
+      verwerkt: cascading style sheets. Het gaat om stijlbladen, die de
+      mogelijkheid bieden om vormgeving van webpagina's in een apart document
+      toe te passen. 'cascading' verwijst daarbij naar de styling rules, die
+      'cascade' (waterval) van verschillende bronnen. Kort gezegd: er zit een
+      bepaalde hierarchie in de styling, waarbij een hogere voorganger de regels
+      van een lagere overschrijft.
+    </p>
+    <h3>Voorbeeld cascading, met conflict:</h3>
+    <p>
+      h1 { color: blue; } h1 { color: yellow; } &lt;h1&gt;This is a
+      header&lt;/h1&gt;
+    </p>
+    <h3>Voorbeeld cascading</h3>
+    <p>
+      Hoewel de h1 een kleur van blauw krijgt, wordt deze overschreven door een
+      hoger gelegen 'rule' van de div
+    </p>
+    <p>
+      .main-header { color: purple; } h1 { color: blue; } &lt;h1
+      class=&quot;main-header&quot;&gt;Dit is een header&lt;/h1&gt;
+    </p>
+    <h2>Inherited</h2>
+    <p>
+      Inherited betekent doorgegeven. In CSS betekent dit dat een element zonder
+      styling, de rules kan overnemen van zijn ouder.
+    </p>
+    <h3>Voorbeeld Inherited</h3>
+    <p>p {color: purple;}</p>
+    <p>
+      &lt;p&gt;Deze tekst heeft &lt;span&gt;een span&lt;/span&gt; gekregen, maar
+      de span heeft geen styling rule. Daarom neemt hij deze over van zijn
+      parent 'p'&lt;/p&gt;
+    </p>
+  </body>
+</html>

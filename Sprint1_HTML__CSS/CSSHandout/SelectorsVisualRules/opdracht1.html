@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 1</title>
+    <style>
+      .internal {
+        font-size: 18px;
+        color: darkblue;
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Opdracht 1</h1>
+    <p>
+      Je kunt op 3 verschillende manieren CSS in je HTML inladen. Op welke 3
+      manieren kun je dat doen? Leg ook voor elke wijze uit wat het precies
+      inhoud.
+    </p>
+
+    <h2>External</h2>
+    <p>
+      Antwoord Er zijn drie manier om dit te doen: 1. External, daarbij wordt
+      verwezen naar een extern css bestand met styling. Deze wordt met
+      onderstaande link in de head aangeroepen
+    </p>
+    <p>link rel="stylesheet" href="mystyle.css"</p>
+
+    <h2>Internal</h2>
+    <p>
+      Styling kan ook worden toegepast met internal commands. Deze worden in de
+      head onder style geplaatst. Dit is handig voor korte opdrachten
+    </p>
+    <p class="internal">Dit is bijvoorbeeld internal gestyled.</p>
+
+    <h2>Inline</h2>
+    <p>
+      Met inline css wordt de styling in het document toegepast, bij de
+      specifieke tag.
+    </p>
+    <h1 style="color: blue; text-align: center">Voorbeeld heading</h1>
+    <p style="color: red">Voorbeeld paragraaf</p>
+  </body>
+</html>

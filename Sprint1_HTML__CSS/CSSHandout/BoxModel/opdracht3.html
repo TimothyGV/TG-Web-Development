@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>opdracht2</title>
+    <style>
+      .container {
+        width: 800px;
+        height: 50px;
+        background: lightgreen;
+      }
+      .block {
+        display: block;
+        background: rgb(2, 136, 2);
+        border: 1px solid #000;
+      }
+
+      #block1 {
+        margin-bottom: 10px;
+      }
+
+      span {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 3px solid rgb(255, 38, 0);
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Display property</h1>
+    <h2>Wat gebeurt er als je een width en height toevoegt aan de span?</h2>
+    <p>
+      Inline-block elementen bestaan in dit geval binnen het 'block'. Width en
+      height kunnen, in tegenstelling tot, inline wel toegepast worden. Het
+      verschil met display:block is dat er geen nieuwe regel wordt gemaakt, en
+      de inline-block dus naast andere elementen staat. Het parent element met
+      Display:block, wordt dus naar buiten 'geduwd'
+    </p>
+    <div class="container">
+      <div class="block" id="block1">
+        Dit is een block box en neemt de hele breedte in waardoor de volgende
+        box op de volgende regel zit.
+      </div>
+      <div class="block">
+        In dit block zit <span>inline tekst</span> wat dus niet op de volgende
+        regel komt te <span>staan</span>
+      </div>
+    </div>
+  </body>
+</html>

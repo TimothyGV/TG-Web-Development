@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 3</title>
+    <style>
+      .descendant p {
+        color: darkblue;
+      }
+
+      .class {
+        color: darkgoldenrod;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>
+        De type selector matcht met all elementen met die naam. Voorbeeld,
+        waarbij alle 'a' tags worden opgeroepen: a{color: red;}
+      </p>
+    </section>
+
+    <section>
+      <p>
+        De descendant selector target alle elementen van die klasse in een
+        element. Voorbeeld waarbij alle p tags worden opgeroepen in een div: div
+        p{ color: red; } De class selector raakt alle elementen van die class.
+        Voorbeeld: er wordt een div aangemaakt met de naam: descendant.
+      </p>
+
+      <div class="descendant">
+        <h1>De h1 wordt niet gestyled</h1>
+        <p>En dit is een ondertitel met p tag die wel wordt gestyled</p>
+      </div>
+    </section>
+
+    <section>
+      <p>
+        De class selector ziet er zo uit en zorgt er voor dat alle tekst een
+        specifieke kleur krijgt: .class{ color: #000; }
+      </p>
+      <div class="class">
+        <p>Dit is een voorbeeld</p>
+        <p>En dit is een ondertitel</p>
+      </div>
+    </section>
+  </body>
+</html>
