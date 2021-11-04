@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: cornsilk;
+      }
+
+      .voorbeelden {
+        display: flex;
+      }
+
+      .after {
+        width: 600px;
+        height: 400px;
+        background: cornflowerblue;
+        margin-right: 10px;
+      }
+      .after p::after {
+        content: url("https://cdn.webshopapp.com/shops/29614/files/313096090/300x300x2/ronde-sticker-smiley-eenbeetjegeluknl.jpg");
+      }
+
+      .backdrop {
+        width: 600px;
+        height: 400px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background: url(https://images.pexels.com/photos/374074/pexels-photo-374074.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+        background-repeat: no-repeat;
+      }
+      .backdrop .box {
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>14 verschillende pseudo elementen</h1>
+    <div class="voorbeelden">
+      <div class="after">
+        <p>Dit is het ::after effect</p>
+      </div>
+      <div class="backdrop">
+        <div class="box">
+          <p>Dit is het ::backdrop effect blur met 30px</p>
+        </div>
+      </div>
+
+      <!-- <p>::backdrop</p>
+      <p>::cue</p>
+      <p>::cue-region</p>
+      <p>::first-letter</p>
+      <p>::first-line</p>
+      <p>::file-selector-button</p>
+      <p>::grammar-error</p>
+      <p>::marker</p>
+      <p>::part()</p>
+      <p>::placeholder</p>
+      <p>::selection</p>
+      <p>::slotted()</p>
+      <p>::spelling-error</p>
+      <p>::target-text</p> -->
+    </div>
+  </body>
+</html>
