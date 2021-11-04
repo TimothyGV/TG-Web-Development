@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 9</title>
+    <style>
+      .content {
+        width: 300px;
+        background: darkgrey;
+      }
+
+      #padding {
+        padding: 30px;
+        border: 10px solid green;
+      }
+
+      #margin {
+        padding: 30px;
+        border: 10px solid green;
+        margin: 70px;
+      }
+
+      #border {
+        border: 35px solid blue;
+      }
+
+      #border2 {
+        margin-top: 40px;
+        border: 35px dotted blue;
+      }
+
+      #border3 {
+        margin-top: 40px;
+        border: 35px groove blue;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Opdracht 6</h1>
+    <p>Boxes met verschillende margin, padding, en border.</p>
+    <div class="content" id="padding">
+      Deze box heeft een padding en een border, maar geen margin.
+    </div>
+
+    <div class="content" id="margin">
+      Deze box heeft dezelfde padding en border als de vorige, maar nu ook een
+      margin van 70px (Boven, rechts, onder, links).
+    </div>
+    <div class="content" id="border">
+      Deze container heeft geen margin of padding, maar wel een border
+    </div>
+    <div class="content" id="border2">
+      Deze container heeft geen padding, maar wel een border en een margin-top.
+    </div>
+    <div class="content" id="border3">
+      Deze container heeft padding, een border en een margin-top.
+    </div>
+  </body>
+</html>

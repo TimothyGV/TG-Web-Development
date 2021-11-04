@@ -1,0 +1,81 @@
+1. Kan je de 3 andere opties van target attribuut raden?
+        __blank
+        __self
+        __parent
+
+2. Hieronder volgt een lijst van semantic elements. Onderzoek elk element om te controleren of je idee over de betekenissen ook echt klopt.
+
+<header> = The <header> element represents a container for introductory content or a set of navigational links.
+•	<footer> = The <footer> tag defines a footer for a document or section.
+•	<nav> = The <nav> tag defines a set of navigation links.
+•	<section> = The <section> tag defines a section in a document.
+•	<main> = The <main> tag specifies the main content of a document.The content inside the <main> element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.
+•	
+•	<article> = The <article> tag specifies independent, self-contained content.
+•	<aside> = The <aside> tag defines some content aside from the content it is placed in.
+The aside content should be indirectly related to the surrounding content.
+
+•	<figure> en <figcaption>
+o	The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+o	The <figcaption> tag defines a caption for a <figure> element.
+•	<summary> en <details>
+o	The <details> tag specifies additional details that the user can open and close on demand. The <details> tag is often used to create an interactive widget that the user can open and close. By default, the widget is closed. When open, it expands, and displays the content within.
+o	The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details.
+
+<details>
+  <summary>Epcot Center</summary>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details> 
+
+
+3. Onderzoek de volgende elementen om erachter te komen wat hun implicit ARIA role is.
+
+Header = role="banner" de heading van een pagina of sectie. Een level 1, 2, 3 etc. definieert main
+heading, sub-heading etc. 
+•	Footer = role="contentinfo"
+•	Section = role="region". Using the <section> element will automatically communicate a section has a role of region if it is given an accessible name. Developers should always prefer using the correct semantic HTML element, in this case <section>, over using ARIA.
+•	Aside = role="complementary". used to designate a supporting section that relates to the main content, yet can stand alone when separated.
+•	Input = The input role is an abstract role. It is included here for completeness of documentation. It is not to be used by web authors.
+
+
+4. De standaardbreedte van een <col> is 1 kolom, maar dit kan aangepast worden via een HTML attribuut. Onderzoek welke HTML attribuut hiervoor gebruikt wordt.
+    <col> width
+
+
+5. HTML Questions
+    5.1De standaard markup language for Web pages. Geeft de structuur van de pagina aan. 
+    5.2.	
+        <!DOCTYPE html>
+        <html>
+            <head>
+          <title>Page Title</title>
+          </head>
+          <body>
+
+              <h1>Header</h1>
+              <p>paragraaf.</p>
+
+            </body>
+        </html> 
+      5.3.	 De Anchor tag definieert een hyperlink
+      5.4.	 <header> <nav> <article> <video>
+      5.5.	 Href, src, width/height, alt, style, lang, title,
+      5.6.	 Semantics geeft een beschrijving aan de computer en developer. 
+      5.7.	 Metadata over het HTML document. Dus data over de data. Welke taal etc.
+      5.8.	 Elementen kunnen andere elementen bevatten. (child <>parent)
+      5.9.	 Inline: word teen inline element, height en width kunnen niet gebruikt worden. Block:het element word teen blok en start op een nieuwe regel (met gehele width). 
+      5.10.	 Toegankelijkheid voor gebruikers met een handicap
+
+      HTML excercises -> zie index.html
+
+
+
+
+
+
+
+
+
+
+
+
