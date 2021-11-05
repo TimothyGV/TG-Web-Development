@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 5</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      /* Pseudo versie */
+      .container {
+        position: relative;
+        width: 800px;
+        height: 200px;
+      }
+
+      p {
+        position: absolute;
+        width: 800px;
+        height: 100px;
+        background: rgb(53, 168, 140);
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        text-align: center;
+      }
+
+      .inner::before {
+        background: url("https://images.pexels.com/photos/825949/pexels-photo-825949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      }
+
+      /* 
+      .inner::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        right: 0;
+        width: 65px;
+        height: 15px;
+        background: red;
+      } */
+    </style>
+  </head>
+  <body>
+    <h2>Pseudo Element ::before</h2>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum, nam
+        laudantium minus eligendi aliquam perferendis asperiores impedit iste
+        distinctio consequatur vel praesentium beatae possimus quod reiciendis
+        similique ullam rem.
+      </p>
+      <div class="inner"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 4</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 10px;
+      }
+
+      .btn_container {
+        position: relative;
+        width: 800px;
+        height: 100px;
+      }
+
+      button {
+        width: 100%;
+        height: 100%;
+        background: rgb(53, 168, 140);
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        border: none;
+      }
+
+      button:hover {
+        background: yellowgreen;
+      }
+
+      .box {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: rgb(0, 255, 76);
+      }
+
+      #box__left {
+        top: 0;
+        left: 0;
+        border-left: 12px solid red;
+        border-top: 12px solid red;
+        background: rgb(53, 168, 140);
+      }
+
+      #box__right {
+        bottom: 0;
+        right: 0;
+        border-right: 12px solid red;
+        border-bottom: 12px solid red;
+        background: rgb(53, 168, 140);
+      }
+
+      /* Pseudo versie */
+      .container {
+        position: relative;
+        width: 800px;
+        height: 100px;
+      }
+
+      p {
+        position: absolute;
+        width: 800px;
+        height: 100px;
+        background: rgb(53, 168, 140);
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        text-align: center;
+      }
+
+      p::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 65px;
+        height: 15px;
+        background: red;
+      }
+
+      p::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 15px;
+        height: 65px;
+        background: red;
+      }
+
+      .inner::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        right: 0;
+        width: 65px;
+        height: 15px;
+        background: red;
+      }
+
+      .inner::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        right: 0;
+        width: 15px;
+        height: 65px;
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Zonder gebruik pseudo-element</h2>
+    <div class="btn_container">
+      <button>Button</button>
+      <div class="box" id="box__left"></div>
+      <div class="box" id="box__right"></div>
+    </div>
+
+    <h2>Met gebruik pseudo-element</h2>
+    <div class="container">
+      <p>Button</p>
+      <div class="inner"></div>
+    </div>
+  </body>
+</html>

@@ -6,69 +6,280 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Opdracht 3</title>
     <style>
+      /* Algemene styling */
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-size: 18px;
+        letter-spacing: 1.125px;
+        line-height: 2;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
       }
       body {
         background: cornsilk;
       }
 
-      .voorbeelden {
-        display: flex;
+      h1 {
+        font-size: xx-large;
+        text-align: center;
       }
 
-      .after {
-        width: 600px;
+      .voorbeelden {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .container {
+        width: 500px;
         height: 400px;
+        background: cornflowerblue;
+        margin: 10px;
+        padding: 3px;
+        box-shadow: 2px 2px 8px #000;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .container:hover {
+        transform: scale(1.2);
+        box-shadow: 2px 2px 8px rgb(255, 255, 255);
+      }
+
+      /* Einde algemene stylinh */
+
+      /* after */
+
+      #after {
         background: cornflowerblue;
         margin-right: 10px;
       }
-      .after p::after {
+      #after p::after {
         content: url("https://cdn.webshopapp.com/shops/29614/files/313096090/300x300x2/ronde-sticker-smiley-eenbeetjegeluknl.jpg");
       }
 
-      .backdrop {
-        width: 600px;
-        height: 400px;
+      /* backdrop */
+
+      #backdrop {
         align-items: center;
         display: flex;
         justify-content: center;
         background: url(https://images.pexels.com/photos/374074/pexels-photo-374074.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
         background-repeat: no-repeat;
+        background-size: cover;
       }
-      .backdrop .box {
+      #backdrop .box {
         background: white;
+      }
+
+      .container::backdrop {
+        background: rgba(255, 0, 0, 0.25);
+      }
+
+      .first__voorbeeld p::first-letter {
+        font-size: xx-large;
+        color: crimson;
+      }
+
+      .firstline__voorbeeld p::first-line {
+        font-size: xx-large;
+        color: crimson;
+      }
+
+      #file__selector input[type="file"]::file-selector-button {
+        border: 8px solid #776547;
+        padding: 2px;
+        transition: 1s;
+      }
+
+      #file__selector input[type="file"]::file-selector-button:hover {
+        background-color: #bbff00;
+        border: 2px solid #ff0404;
+        transition: 0.5s;
+      }
+
+      #grammar-error p::grammar-error {
+        text-decoration: underline red;
+        color: red;
+      }
+
+      #marker {
+        padding: 30px;
+      }
+
+      #marker .marker__ul ul li::marker {
+        color: red;
+        font-size: 1.5em;
+      }
+
+      #placeholder .placeholder__container input {
+        width: 400px;
+      }
+
+      #placeholder .placeholder__container ::placeholder {
+        color: red;
+        font-size: 2em;
+      }
+
+      #selection p::selection {
+        color: red;
+        background: yellow;
       }
     </style>
   </head>
   <body>
     <h1>14 verschillende pseudo elementen</h1>
     <div class="voorbeelden">
-      <div class="after">
+      <div class="container" id="after">
         <p>Dit is het ::after effect</p>
       </div>
-      <div class="backdrop">
+      <div class="container" id="backdrop">
         <div class="box">
-          <p>Dit is het ::backdrop effect blur met 30px</p>
+          <p>
+            Het backdrop effect wordt als element onder een element getoont dat
+            gepresenteerd is in fullscreen mode. Een voorbeeld hiervan is een
+            dialog screen (met input), of een video. dialog::backdrop {
+            background: rgba(255,0,0,.25); } Een dialog window wordt geopend met
+            javascript....
+          </p>
+          <dialog>
+            <h2>Dit is een dialog window</h2>
+            <button>close</button>
+          </dialog>
         </div>
       </div>
-
-      <!-- <p>::backdrop</p>
-      <p>::cue</p>
-      <p>::cue-region</p>
-      <p>::first-letter</p>
-      <p>::first-line</p>
-      <p>::file-selector-button</p>
-      <p>::grammar-error</p>
-      <p>::marker</p>
-      <p>::part()</p>
-      <p>::placeholder</p>
-      <p>::selection</p>
-      <p>::slotted()</p>
-      <p>::spelling-error</p>
-      <p>::target-text</p> -->
+      <div class="container" id="cue">
+        <p>
+          ::cue wordt gebruikt om verschillende webVTT cues te selecteren. Het
+          gaat bijvoorbeeld om ondertiteling bij een video. Er kunnen veel
+          verschillende css selectors worden toegepast.
+        </p>
+        <h3>Voorbeeld</h3>
+        <p>::cue { color: yellow; font-weight: bold; }</p>
+      </div>
+      <div class="container" id="cue">
+        <p>
+          ::cue-region matcht webVTT cues in een element. Bijvoorbeeld om
+          specifieke ondertitels te stylen.
+        </p>
+        <h3>Voorbeeld</h3>
+        <p>::cue-region { color: yellow; font-weight: bold; }</p>
+      </div>
+      <div class="container" id="first-letter">
+        <p>
+          ::first-letter selecteert de eerste letter van het element, waar
+          vervolgens styling op kan worden toegepast.
+        </p>
+        <h3>Voorbeeld</h3>
+        <div class="first__voorbeeld">
+          <p>Dit is een voorbeeld van het pseudo-element ::first-letter</p>
+        </div>
+      </div>
+      <div class="container" id="first-line">
+        <p>
+          ::first-line selecteert de eerste regel van het element, waar
+          vervolgens styling op kan worden toegepast.
+        </p>
+        <h3>Voorbeeld</h3>
+        <div class="firstline__voorbeeld">
+          <p>
+            Dit is een voorbeeld van het pseudo-element ::first-line. Ipsum
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            corporis culpa cumque nesciunt nisi, aperiam praesentium dolore
+            soluta necessitatibus eos. Expedita rerum voluptates quibusdam!
+            Totam minima amet ad quis voluptatibus.
+          </p>
+        </div>
+      </div>
+      <div class="container" id="file__selector">
+        <p>
+          Een ::file-selector-button selecteert een button van een &lt;input&gt;
+          met het type &lt;file&gt;
+        </p>
+        <h3>Voorbeeld</h3>
+        <form>
+          <label for="fileUpload">Verstuur bestand</label>
+          <input type="file" id="upload" />
+        </form>
+      </div>
+      <div class="container" id="grammar-error">
+        <p>
+          Een ::grammar-error geeft aan waar de gebruker een grammaticale fout
+          heeft gemaakt. Hangt er wel vanaf of de browser het ondersteunt.
+        </p>
+        <h3>Voorbeeld</h3>
+      </div>
+      <div class="container" id="marker">
+        <p>
+          Met de ::marker pseudo-element kan je de 'bulletpoints' of 'cijfers'
+          voor een li-item aanpassen met verschillende selectors.
+        </p>
+        <h3>Voorbeeld</h3>
+        <div class="marker__ul">
+          <ul>
+            <li>Css</li>
+            <li>HTML</li>
+            <li>SASS</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container" id="part">
+        <p>Hier komt een voorbeeld</p>
+      </div>
+      <div class="container" id="placeholder">
+        <p>
+          Een placeholder is een stukje tekst in bijvoorbeeld een input veld.
+          Met de pseudo-element ::placeholder kan je dat specifieke stukje
+          selecteren en stylen.
+        </p>
+        <h3>Voorbeeld</h3>
+        <div class="placeholder__container">
+          <input
+            type="text"
+            name="placeholder"
+            placeholder="Dit is een voorbeeld"
+          />
+        </div>
+      </div>
+      <div class="container" id="selection">
+        <p>
+          Het pseudo-element ::selection matcht met een dele van een element dat
+          is geselecteerd door de gebruiker. Er zijn maar een klein aantal
+          selectors die hier gebruikt kunnen worden: color, background, cursor
+          en outline.
+        </p>
+        <h3>Voorbeeld</h3>
+        <p>Selecteer bijvoorbeeld de vorige paragraaf.</p>
+      </div>
+      <div class="container" id="slotted">
+        <p>slotted</p>
+      </div>
+      <div class="container" id="spelling__error">
+        <p>
+          Met de ::spelling-error pseudo-element wordt een text segment gestyled
+          die door de browser als incorrect gespeld wordt gezien.
+        </p>
+        <h3>Voorbeeld</h3>
+        <p>
+          &lt;p contenteditable spellcheck=&quot;true&quot;&gt;My friends are
+          coegdfgfddffbgning to the party tonight.&lt;/p&gt;
+        </p>
+        <p>&lt;p&gt;::spelling-error { text-decoration: wavy red; }</p>
+      </div>
+      <div class="container" id="target__text">
+        <p>
+          Met de ::target-text pseudo-element wordt een text segment gestyled
+          waar naar gescrolled wordt, indien gebruik gemaakt wordt van
+          scroll-to-text. Niet elke browser ondersteunt dit.
+        </p>
+        <h3>Voorbeeld</h3>
+        <p>
+          p ::target-text { background-color: rebeccapurple; color: white;
+          font-weight: bold; }
+        </p>
+      </div>
     </div>
   </body>
 </html>
