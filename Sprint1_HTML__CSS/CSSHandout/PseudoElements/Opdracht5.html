@@ -12,53 +12,41 @@
         box-sizing: border-box;
       }
 
-      /* Pseudo versie */
       .container {
         position: relative;
         width: 800px;
-        height: 200px;
+        height: 500px;
+        background: none;
+        border: 5px solid black;
       }
 
-      p {
+      .paragraaf {
         position: absolute;
-        width: 800px;
-        height: 100px;
-        background: rgb(53, 168, 140);
+        top: 50%;
+        z-index: 1000;
         font-size: 18px;
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
-        outline: none;
-        border: none;
-        text-align: center;
       }
 
-      .inner::before {
-        background: url("https://images.pexels.com/photos/825949/pexels-photo-825949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-      }
-
-      /* 
-      .inner::before {
+      .container::before {
         position: absolute;
         content: "";
-        bottom: 0;
-        right: 0;
-        width: 65px;
-        height: 15px;
-        background: red;
-      } */
+        background-image: url("https://images.pexels.com/photos/825949/pexels-photo-825949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-size: 800px 500px;
+        display: inline-block;
+        width: 790px;
+        height: 490px;
+      }
     </style>
   </head>
   <body>
     <h2>Pseudo Element ::before</h2>
     <div class="container">
-      <p>
+      <p class="paragraaf">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum, nam
         laudantium minus eligendi aliquam perferendis asperiores impedit iste
         distinctio consequatur vel praesentium beatae possimus quod reiciendis
         similique ullam rem.
       </p>
-      <div class="inner"></div>
     </div>
   </body>
 </html>
