@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 6</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .container {
+        position: relative;
+        width: 350px;
+        height: 350px;
+        /* background: blueviolet; */
+        margin: 10px;
+      }
+
+      .inner::before {
+        position: absolute;
+        content: "";
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: #000;
+        top: 20%;
+        left: 20%;
+      }
+
+      .inner::after {
+        position: absolute;
+        content: "";
+        width: 300px;
+        height: 80px;
+        background: #000;
+        border-radius: 100px;
+        top: 35%;
+        right: 8%;
+      }
+
+      .paragraaf {
+        position: absolute;
+        top: 38%;
+        left: 45%;
+        z-index: 1000;
+        font-size: 4rem;
+        color: rgb(255, 255, 255);
+      }
+
+      .paragraaf::after {
+        position: absolute;
+        background: #fff;
+        width: 10px;
+        height: 10px;
+        content: "";
+        border-radius: 50%;
+        top: 23%;
+        right: 350%;
+      }
+      .paragraaf::before {
+        position: absolute;
+        background: #fff;
+        width: 10px;
+        height: 10px;
+        content: "";
+        border-radius: 50%;
+        top: 60%;
+        left: 350%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Opdracht 6</h1>
+    <div class="container">
+      <div class="inner"></div>
+      <p class="paragraaf">1</p>
+    </div>
+    <div class="container">
+      <div class="inner"></div>
+      <p class="paragraaf">2</p>
+    </div>
+    <div class="container">
+      <div class="inner"></div>
+      <p class="paragraaf">3</p>
+    </div>
+  </body>
+</html>
