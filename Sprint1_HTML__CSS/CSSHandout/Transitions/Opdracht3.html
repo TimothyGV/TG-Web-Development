@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 3</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 700px;
+        height: 270px;
+        margin: 20px auto;
+        padding: 5px;
+        background-color: rgb(182, 182, 182);
+        border: 1px solid black;
+        overflow: hidden;
+      }
+
+      .element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        margin: 2px;
+        background-color: rgb(214, 208, 208);
+      }
+
+      .container:hover .element {
+        transform: translateX(640px);
+        background: red;
+      }
+
+      #e1 {
+        transition: all 3s ease;
+      }
+
+      .container:hover #e1 {
+        border-radius: 50%;
+      }
+
+      /* #e1 {
+        animation-name: blok1;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes blok1 {
+        0% {
+          left: 0px;
+        }
+        50% {
+          transform: translateX(640px);
+          transition: all 2s ease;
+          border-radius: 50%;
+          left: 640px;
+          background: red;
+        }
+        100% {
+          left: 0px;
+        }
+      } */
+
+      #e2 {
+        transition: all 3s linear;
+      }
+
+      .container:hover #e2 {
+        border-radius: 10px;
+      }
+
+      #e3 {
+        transition: all 3s ease-out;
+      }
+
+      #e4 {
+        background-color: #fff;
+        transition: all 3s ease-in;
+      }
+
+      .container:hover #e4 {
+        background-color: red;
+      }
+
+      #e5 {
+        transition: all 3s cubic-bezier(0.6, 0.73, 0.08, -0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Opdracht 3: Transition-timing</h1>
+    <p>https://thoughtbot.com/blog/transitions-and-transforms</p>
+    <div class="container">
+      <div class="element" id="e1">1</div>
+      <div class="element" id="e2">2</div>
+      <div class="element" id="e3">3</div>
+      <div class="element" id="e4">4</div>
+      <div class="element" id="e5">5</div>
+    </div>
+  </body>
+</html>

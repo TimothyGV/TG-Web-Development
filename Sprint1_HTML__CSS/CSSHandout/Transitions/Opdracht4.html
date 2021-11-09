@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 4</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1.4;
+        letter-spacing: 2px;
+      }
+
+      body {
+        width: 900px;
+        margin: 50px auto;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      .container {
+        position: relative;
+        width: 700px;
+        height: 400px;
+        margin: 20px auto;
+
+        background-color: rgb(182, 182, 182);
+        border: 1px solid black;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      .element {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        background-color: none;
+      }
+
+      #e1,
+      #e2 {
+        margin-top: 150px;
+        margin-left: 325px;
+        transition-property: margin-top, margin-left;
+        transition-duration: 1s, 3s;
+        transition-delay: 0, 0.1s;
+      }
+
+      .container:hover #e1 {
+        margin-left: 648px;
+        margin-top: 0px;
+        transition-property: margin-left, margin-top;
+        transition-duration: 3s, 1s;
+        transition-delay: 0, 0.1s;
+      }
+
+      .container:hover #e2 {
+        margin-left: 0px;
+        margin-top: 0px;
+        transition-property: margin-left, margin-top;
+        transition-duration: 3s, 1s;
+        transition-delay: 0, 0.1s;
+      }
+
+      #e3 {
+        margin-left: 325px;
+        margin-top: 150px;
+        transition-property: margin-left, margin-top;
+        transition-duration: 1s, 2s;
+        transition-delay: 1s, 2s;
+      }
+
+      .container:hover #e3 {
+        margin-left: 0px;
+        margin-top: 350px;
+        transition-property: margin-left, margin-top;
+        transition-duration: 1s, 3s;
+        transition-delay: 1s, 3s;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Opdracht 4</h1>
+    <p>
+      <a href="">
+        https://stackoverflow.com/questions/7902552/css3-multiple-transitions-reversed-animation
+      </a>
+    </p>
+    <p>
+      Allereerst heb ik met de 'transition-property' aangegeven welke
+      eigenschappen door de transition moeten worden aangesproken. Hiervoor heb
+      ik twee scenario's gemaakt. De eerste is het startscenario, waarbij drie
+      blokken zich in het midden bevinden. Wanneer ik Hover op de container,
+      moeten zij zich naar drie verschillende locaties begeven. Dit wordt onder
+      .container:hover gedaan. Door te spelen met de duration en delay kan je er
+      voor zorgen dat margin-left, dan wel -top op verschillende momenten worden
+      uitgevoerd. Het derde blokje vergt de aandacht, deze duurt er langer over.
+      En doet de omgekeerde weg terug (left > top, ipv top > left) De
+      transitions onder de id (#e1, #e2, #e3) geven de terugroute aan, zodra de
+      user de muis van de container afhaalt.
+    </p>
+
+    <div class="container">
+      <div class="element" id="e1">1</div>
+      <div class="element" id="e2">2</div>
+      <div class="element" id="e3">3</div>
+    </div>
+  </body>
+</html>
