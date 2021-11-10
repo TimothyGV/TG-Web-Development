@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 5</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        position: relative;
+        width: 600px;
+        height: 500px;
+        background-color: rgb(165, 164, 164);
+        border: 5px solid rgb(30, 255, 0);
+        margin: 15px;
+      }
+
+      .box {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        border: 10px solid black;
+        background: url("https://images.pexels.com/photos/7767506/pexels-photo-7767506.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .box-outer {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 230px;
+        height: 230px;
+        cursor: pointer;
+        transition: background-color 0.5s ease 1s;
+        z-index: 999;
+      }
+
+      .box-outer p {
+        text-align: center;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+      }
+
+      .box-outer:hover {
+        background: rgba(220, 20, 60, 0.24);
+      }
+
+      .box-outer::after {
+        position: absolute;
+        width: 230px;
+        height: 230px;
+        content: "";
+        background-color: yellow;
+        transition: transform 1s ease;
+        top: 0;
+      }
+
+      .box-outer:hover::after {
+        transform: rotate(30deg) translateY(40%) translateX(90%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Opdracht 5</h1>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box-outer">
+        <p>Amazing</p>
+      </div>
+    </div>
+  </body>
+</html>

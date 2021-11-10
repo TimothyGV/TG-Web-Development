@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 6</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 18px;
+        line-height: 1.4;
+        letter-spacing: 2px;
+
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background-color: #f1f1f1;
+      }
+
+      h1 {
+        font-size: xx-large;
+      }
+
+      .container {
+        display: flex;
+        margin: 40px;
+        padding: 40px;
+        position: relative;
+        width: 100vw;
+        height: 700px;
+        /* background-color: rgb(175, 172, 172); */
+      }
+
+      /* Kaart styling */
+      .card {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 500px;
+        padding: 20px;
+        background: #f12711;
+        background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+        background: linear-gradient(to right, #f5af19, #f12711);
+        border-radius: 25px;
+        box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+        color: #000;
+        overflow: hidden;
+        transition: transform all 1s ease, color all 1.5s ease 0.5s;
+        cursor: pointer;
+      }
+
+      /* Making groups */
+      .container2 {
+        margin-left: 60px;
+        transition: transform 1s ease 0.2s;
+      }
+
+      .container3 {
+        transform: translateX(-60%);
+        transition: transform 1s ease 0.2s;
+      }
+
+      /* FONTS */
+      .card-date p {
+        font-size: 1rem;
+      }
+
+      .card-placeholder h3 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 200px;
+      }
+
+      .card-author p {
+        bottom: 0;
+        font-size: 1rem;
+        font-weight: lighter;
+        margin-bottom: 20px;
+      }
+
+      /* transitions */
+      .card:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+        transform: translateY(-15px);
+        transition: transform 1s ease 0.2s;
+        color: #fff;
+      }
+
+      #c1 {
+        left: 0;
+      }
+
+      #c1:hover ~ .container2 {
+        transform: translateX(300px);
+      }
+
+      #c2:hover ~ .container3 {
+        transform: translateX(300px);
+      }
+
+      #c2 {
+        transition: transform 1s ease 0.2s;
+      }
+
+      #c3 {
+        margin-left: 100px;
+        transition: transform 1s ease 0.2s;
+      }
+
+      #c3:hover ~ #c4 {
+        transform: translateX(300px);
+      }
+
+      #c4 {
+        margin-left: 200px;
+        transition: transform 1s ease 0.2s;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Opdracht 6</h1>
+    <div class="container">
+      <div class="card" id="c1">
+        <div class="card-date">
+          <p>Article nov 11, 2021</p>
+        </div>
+        <div class="card-placeholder">
+          <h3>Placeholder title</h3>
+        </div>
+        <div class="card-author">
+          <p>Author:</p>
+          <p>Your name here</p>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="card" id="c2">
+          <div class="card-date">
+            <p>Article nov 11, 2021</p>
+          </div>
+          <div class="card-placeholder">
+            <h3>Placeholder title</h3>
+          </div>
+          <div class="card-author">
+            <p>Author:</p>
+            <p>Your name here</p>
+          </div>
+        </div>
+        <div class="container3">
+          <div class="card" id="c3">
+            <div class="card-date">
+              <p>Article nov 11, 2021</p>
+            </div>
+            <div class="card-placeholder">
+              <h3>Placeholder title</h3>
+            </div>
+            <div class="card-author">
+              <p>Author:</p>
+              <p>Your name here</p>
+            </div>
+          </div>
+          <div class="card" id="c4">
+            <div class="card-date">
+              <p>Article nov 11, 2021</p>
+            </div>
+            <div class="card-placeholder">
+              <h3>Placeholder title</h3>
+            </div>
+            <div class="card-author">
+              <p>Author:</p>
+              <p>Your name here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

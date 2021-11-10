@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lobster", cursive;
+  scroll-behavior: smooth;
+  font-size: 18px;
+  line-height: 1.125;
+  letter-spacing: 2px;
+}
+
+body {
+  background-color: rgb(128, 179, 128);
+}
+
+h1 {
+  color: rgb(97, 135, 216);
+  font-weight: bold;
+  font-size: 4rem;
+  text-shadow: -1px 1px #f1f1f1, -2px 2px #f1f1f1, -3px 3px #f1f1f1,
+    -4px 4px #f1f1f1, -5px 5px #f1f1f1, -6px 6px #f1f1f1, -7px 7px #f1f1f1,
+    -8px 8px #f1f1f1, -9px 9px #f1f1f1, -10px 10px #f1f1f1, -11px 11px #f1f1f1,
+    -12px 12px #f1f1f1, -13px 13px #f1f1f1, -14px 14px 20px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  color: #000;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  padding: 5px;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid rgb(128, 179, 128);
+  color: rgb(97, 135, 216);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-shadow: -1px 1px rgba(0, 0, 0, 0.8);
+}
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background: #f1f1f1;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.list__item {
+  display: inline-block;
+  transition: all 1s ease;
+}
+
+.nav__links:hover {
+  color: rgb(97, 135, 216);
+  transform: scale(1.2);
+}
+.nav__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+/* MAIN */
+/* HEADER */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  background: url("/Sprint1_HTML__CSS/CSSHandout/DeChefkok/img/pexels-timur-saglambilek-66639.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+}
+
+.header__title {
+  margin-bottom: 20px;
+}
+
+.header__subtitle p {
+  color: rgb(97, 135, 216);
+  margin-bottom: 20px;
+  text-shadow: -1px 1px rgba(0, 0, 0, 0.8);
+}
+.btn2 {
+  color: rgb(128, 179, 128);
+}
+
+/* SECTION */
+.gerechten {
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  background: #f1f1f1;
+  text-align: center;
+}
+
+.pasta__container {
+  max-width: 100%;
+}
+
+.pasta__card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  margin-top: 30px;
+}
+
+.card__price {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 0 10px 0;
+}
+
+.card__price h3 {
+  margin-right: 10px;
+}
+
+.card__discription {
+  text-align: start;
+  margin-bottom: 35px;
+}
+
+.card__btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #000;
+  border: 1px solid #bbbaba44;
+  transition: all 1s ease;
+}
+
+.card__btn:hover {
+  transform: scale(1.1);
+  background: rgb(97, 135, 216);
+  box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.3);
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  padding: 10px;
+  color: rgb(97, 135, 216);
+}
+
+footer h3 {
+  margin-bottom: 10px;
+}
+
+.footer__left li {
+  color: #f1f1f1;
+  font-size: 14px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__right a {
+  text-decoration: none;
+  color: #f1f1f1;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.social_icons {
+  display: flex;
+  justify-content: space-evenly;
+  color: #f1f1f1;
+  font-size: 2.5rem;
+  margin: auto 5px;
+}
