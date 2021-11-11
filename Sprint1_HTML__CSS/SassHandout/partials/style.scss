@@ -1,0 +1,11 @@
+@import "./assets/button";
+@import "./assets/colors";
+@import "./assets/variables";
+
+.button {
+  background-color: pink;
+
+  &:hover {
+    background-color: purple;
+  }
+}

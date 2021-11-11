@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>De chefkok</title>
-    <link
-      rel="stylesheet"
-      href="/Sprint1_HTML__CSS/CSSHandout/DeChefkok/styles.css"
-    />
+    <link rel="stylesheet" href="./styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
       rel="stylesheet"
@@ -42,7 +39,7 @@
           <button class="btn2">show more</button>
         </div>
       </header>
-      <section class="gerechten" id="menu">
+      <section class="gerechten" id="gerechten">
         <h2>Populaire gerechten</h2>
         <div class="pasta__container">
           <div class="pasta__card">
@@ -98,6 +95,28 @@
           </div>
         </div>
       </section>
+      <section class="menu" id="menu">
+        <h2>Menu</h2>
+
+        <div class="menu__container">
+          <div class="menu__col">
+            <div class="menu__card">
+              <div class="card__price" id="menu__price">
+                <h3>Antipasti</h3>
+                <h3>Bruschetta</h3>
+                <p>8.99</p>
+              </div>
+              <div class="card__discription">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                temporibus debitis placeat odit inventore doloremque veniam,
+                dicta eos corporis, reprehenderit laborum rem praesentium
+                tenetur, similique modi fugit. Fuga, esse ab?
+              </div>
+            </div>
+          </div>
+          <div class="popup"></div>
+        </div>
+      </section>
       <footer>
         <div class="footer__left">
           <h3>Contact</h3>
@@ -106,11 +125,6 @@
             <li>Telefoon</li>
             <li>Openingstijden</li>
           </ul>
-          <div class="social_icons">
-            <i class="lni lni-instagram"></i>
-            <i class="lni lni-facebook-original"></i>
-            <i class="lni lni-twitter-original"></i>
-          </div>
         </div>
         <div class="footer__right">
           <h3>Navigation</h3>
@@ -119,6 +133,11 @@
             <a href="#">Menu</a>
             <a href="#">contact</a>
           </div>
+        </div>
+        <div class="social_icons">
+          <i class="lni lni-instagram"></i>
+          <i class="lni lni-facebook-original"></i>
+          <i class="lni lni-twitter-original"></i>
         </div>
       </footer>
     </main>

@@ -1,0 +1,48 @@
+.button {
+  width: 150px;
+  height: 50px;
+  background-color: #02ff02;
+  color: yellow;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #1b6e02;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.button {
+  width: 100px;
+  height: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: purple;
+  color: white;
+}
+
+.button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+p {
+  width: 70%;
+  margin: 15px auto;
+}
+
+.colorChangingSquare {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-color: blue;
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
+}
+
+.colorChangingSquare:hover {
+  background-color: red;
+}
+/*# sourceMappingURL=main.css.map */

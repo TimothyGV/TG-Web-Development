@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Opdrachten Extend and Inheritance</title>
+  </head>
+  <body>
+    <h1>Extend and Inheritance</h1>
+    <article>
+      <p>
+        Met mixins kun je styling hergebruiken in een project een verschaft de
+        mogelijkheid om argumenten sterker en flexibler te maken. De @extend
+        stelt ons in staat om ook stylen te hergebruiken, maar een selector
+        inherit die van een ander.
+      </p>
+      <p>
+        @extend is handig voor items die grofweg dezelfde styling hebben, maar
+        op kleine details afwijken.
+      </p>
+      <p>
+        By using the @extend directive, you do not need to specify several
+        classes for an element in your HTML code, like this: &lt;button
+        class=&quot;button-basic button-report&quot;&gt;Report
+        this&lt;/button&gt; . You just need to specify .button-report to get
+        both sets of styles. The @extend directive helps keep your Sass code
+        very DRY
+      </p>
+    </article>
+    <p>
+      In het onderstaande voorbeeld maak ik een product kaart met een img en
+      paragraaf. Het eerste voorbeeld maak ik gebruik van SCSS, in het tweede
+      voeg ik daar mediaqueries aan toe.
+    </p>
+    <h2>Voorbeeld 1</h2>
+    <div class="card-basic">
+      <img src="./img/590768.png" alt="lemon" />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis atque
+        cum ab rem mollitia quod dicta ipsum nihil, blanditiis sint quisquam
+        voluptates, fuga hic laborum? Repellat iure aut dolore debitis.
+      </p>
+    </div>
+    <h2>Voorbeeld 2: Responsive card</h2>
+    <p>
+      Bij een scherm groter dan 1200px wordt het formaat en de backgroundcolor
+      van de tweede kaart aangepast naar purple. Bij een kleiner scherm wordt
+      ook het formaat aangepast en de kleur gewijzigd naar Yellow.
+    </p>
+    <div class="card2">
+      <img src="./img/590768.png" alt="lemon" />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis atque
+        cum ab rem mollitia quod dicta ipsum nihil, blanditiis sint quisquam
+        voluptates, fuga hic laborum? Repellat iure aut dolore debitis.
+      </p>
+    </div>
+  </body>
+</html>

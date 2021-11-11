@@ -101,6 +101,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   padding: 10px;
 }
 
@@ -111,14 +112,28 @@ nav {
 .header__subtitle p {
   color: rgb(97, 135, 216);
   margin-bottom: 20px;
-  text-shadow: -1px 1px rgba(0, 0, 0, 0.8);
+  /* text-shadow: -1px 1px rgba(0, 0, 0, 0.8); */
 }
+.btn1,
+.btn2 {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .btn2 {
   color: rgb(128, 179, 128);
 }
 
+.btn1:hover,
+.btn2:hover {
+  transform: scale(1.1);
+  background: rgb(97, 135, 216);
+  color: #f1f1f1;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.3);
+}
+
 /* SECTION */
-.gerechten {
+.gerechten,
+.menu {
   padding: 20px;
   width: 100%;
   height: auto;
@@ -168,6 +183,29 @@ nav {
   box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.3);
 }
 
+/* MENU */
+.menu__col {
+  position: relative;
+  cursor: pointer;
+}
+
+.popup {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url("./img/Happy-cook-PNG-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#menu__price {
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
 /* FOOTER */
 footer {
   display: flex;
@@ -176,6 +214,8 @@ footer {
 }
 
 footer h3 {
+  width: 100%;
+  height: auto;
   margin-bottom: 10px;
 }
 
@@ -200,8 +240,21 @@ footer h3 {
 
 .social_icons {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   color: #f1f1f1;
-  font-size: 2.5rem;
-  margin: auto 5px;
+  font-size: 2rem;
+  margin: auto 15px;
 }
+
+.social_icons i {
+  margin-bottom: 5px;
+  transition: all 0.5s ease;
+}
+
+.social_icons i:hover {
+  transform: scale(1.1);
+  color: rgb(97, 135, 216);
+}
+
+/* End footer */

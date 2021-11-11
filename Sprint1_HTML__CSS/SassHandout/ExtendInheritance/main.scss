@@ -1,0 +1,46 @@
+%card-basic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: purple;
+  color: white;
+  border: 2px solid black;
+
+  p {
+    width: 100%;
+    font-size: 14px;
+    margin: 20px auto;
+  }
+
+  img {
+    width: 30%;
+  }
+}
+
+$break-small: 320px;
+$break-large: 1200px;
+
+// Styling
+
+.card-basic {
+  @extend %card-basic;
+}
+
+.card2 {
+  @extend %card-basic;
+  background-color: red;
+  @media screen and (max-width: $break-small) {
+    width: 100px;
+    height: 150px;
+    background-color: yellow;
+  }
+  @media screen and (min-width: $break-large) {
+    width: 1000px;
+    height: 1500px;
+    background-color: purple;
+  }
+}
